@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Accueil
+{% endblock title %}
+
+{% block login %}
+<a href="{{ path ('app_logout')}}">Déconnexion</a>
+{% endblock login %}
+
+
+
+
+{% block content %}
+
+<p> Vous êtes bien connecté en tant qu'utilisateur {{ app.user.userIdentifier }}</p>
+
+{% endblock content %}

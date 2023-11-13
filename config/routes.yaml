@@ -1,0 +1,263 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+account:
+    path: /user/account
+    controller: App\Controller\UserSecurityController::showAccount
+
+app_login:
+    path: /login
+    controller: App\Controller\UserSecurityController::login
+
+app_logout:
+    path: /logout
+    controller: App\Controller\UserSecurityController::logout
+
+blog:
+    path: /blog
+    controller: App\Controller\ArticleController::showArticlesFront
+
+blog_category:
+    path: /blog/category/{id}
+    controller: App\Controller\ArticleController::showArticlesCategory
+
+cancel_url:
+    path: /cancel
+    controller: App\Controller\TestStripeController::cancel
+
+careers:
+    path: /careers
+    controller: App\Controller\PublicController::showCareers
+
+cart_add:
+    path: /cart/add/{id}
+    controller: App\Controller\CartController::add
+    requirements:
+        id: '\d+'  
+
+cart_show:
+    path: /cart
+    controller: App\Controller\CartController::cartshow
+
+cart_validate:
+    path: /cart/validate
+    controller: App\Controller\CartController::cartValidate  
+
+cart_delete:
+    path: /cart/delete/{id} 
+    controller: App\Controller\CartController::delete
+    requirements:
+        id: '\d+'
+
+cart_delete_one:
+    path: /cart/deleteone/{id}
+    controller: App\Controller\CartController::deleteOne
+    requirements: 
+        id: '\d+'
+
+cart_remove:
+    path: /cart/remove
+    controller: App\Controller\CartController::cartRemove
+
+checkout:
+    path: /checkout
+    controller: App\Controller\TestStripeController::checkout
+
+cgu:
+    path: /cgu
+    controller: App\Controller\PublicController::showCgu
+
+connexion:
+    path: /connexion
+    controller: App\Controller\PublicController::showConnexion
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::contactForm
+
+create_category:
+    path: /admin/category/create
+    controller: App\Controller\CategoryController::createCategory
+
+create_product:
+    path: /admin/product/create
+    controller: App\Controller\ProductController::createproduct
+
+create_article:
+    path: /admin/article/create
+    controller: App\Controller\ArticleController::createArticle
+
+dashboard:
+    path: /admin/dashboard
+    controller: App\Controller\AdminSecurityController::showDashboard
+
+dashboard_orders:
+    path: /admin/dashboard/orders
+    controller: App\Controller\AdminSecurityController::showOrders
+
+dashboard_users:
+    path: /admin/dashboard/users
+    controller: App\Controller\AdminSecurityController::showUsers
+
+dashboard_reviews:
+    path: /admin/dashboard/reviews
+    controller: App\Controller\AdminSecurityController::showReviews
+
+dashboard_stats:
+    path: /admin/dashboard/stats
+    controller: App\Controller\AdminSecurityController::showStats
+
+delete_account:
+    path: /user/delete/account
+    controller: App\Controller\UserSecurityController::deleteAccount
+
+delete_article:
+    path: /admin/article/delete/{id}
+    controller: App\Controller\ArticleController::deleteArticle
+
+delete_category:
+    path: /admin/category/delete/{id}
+    controller: App\Controller\CategoryController::deleteCategory
+
+delete_product:
+    path: /admin/product/delete/{id}
+    controller: App\Controller\ProductController::deleteProduct
+
+ebook: 
+    path: /ebook
+    controller: App\Controller\CategoryController::showEbook
+
+formations:
+    path: /formations
+    controller: App\Controller\CategoryController::showFormations
+
+front_category:
+    path: /category/{id}
+    controller: App\Controller\CategoryController::showCategoryfront
+    requirements:
+        id: \d+
+
+front_onearticle:
+    path: /article/{id}
+    controller: App\Controller\ArticleController::showOneArticleFront
+    requirements:
+        id: \d+
+
+front_product:
+    path: /product/{id}
+    controller: App\Controller\ProductController::showOneProductFront
+    requirements:
+        id: \d+
+
+forum:
+    path: /forum
+    controller: App\Controller\PublicController::showForum
+
+home:
+    path: /
+    controller: App\Controller\PublicController::showHome
+
+inscription:
+    path: /inscription
+    controller: App\Controller\RegisterController::index
+
+mailer: 
+    path: /mailer
+    controller: App\Controller\MailerController::sendEmail
+
+mapsite:
+    path: /mapsite
+    controller: App\Controller\PublicController::showMapsite
+
+motivation:
+    path: /motivation
+    controller: App\Controller\CategoryController::showMotivation
+
+order_validation:
+    path: /order/validation
+    controller: App\Controller\Order\OrderConfirmationController::confirm
+
+order_customer:
+    path: /order/list
+    controller: App\Controller\Order\OrderListController::index  
+
+order_payment_form:
+    path: /order/pay/{id}
+    controller: App\Controller\Order\OrderPaymentController::showCard
+
+order_terminate:
+    path: /order/terminate/{id}
+    controller: App\Controller\Order\OrderPaymentSuccessController::success
+    requirements:
+        id: '\d+'
+
+review_create:
+    path: /review/create/{id}
+    controller: App\Controller\ReviewController::create
+    requirements:
+        id: '\d+'
+
+review_show:
+    path: /review/show
+    controller: App\Controller\ReviewController::show
+
+review_show_one:
+    path: /review/show/{id}
+    controller: App\Controller\ReviewController::showOne
+    requirements: 
+        id: '\d+'
+
+rdv:
+    path: /rdv
+    controller: App\Controller\CategoryController::showRdv
+
+rgpd:
+    path: /rgpd
+    controller: App\Controller\PublicController::showRgpd
+
+show_category:
+    path: /category/show
+    controller: App\Controller\CategoryController::showCategory
+
+show_article:
+    path: /articles/show
+    controller: App\Controller\ArticleController::showArticles
+
+show_product:
+    path: /product/show
+    controller: App\Controller\ProductController::showProducts
+
+stages:
+    path: /stages
+    controller: App\Controller\CategoryController::showStages
+
+success_url:
+    path: /success
+    controller: App\Controller\TestStripeController::success
+
+update_account: 
+    path: /user/update/account
+    controller: App\Controller\UserSecurityController::updateAccount
+
+update_category:
+    path: /admin/category/update/{id}
+    controller: App\Controller\CategoryController::updateCategory
+
+update_product:
+    path: /admin/product/update/{id}
+    controller: App\Controller\ProductController::updateProduct
+
+update_article:
+    path: /admin/article/update/{id}
+    controller: App\Controller\ArticleController::updateArticle
+
+user_home:
+    path: /user/home
+    controller: App\Controller\UserSecurityController::showHome
+
+valonauteinc:
+    path: /valonauteinc
+    controller: App\Controller\PublicController::showValonauteinc

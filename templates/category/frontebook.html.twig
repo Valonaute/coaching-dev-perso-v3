@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catégories {% endblock %}
+
+{% block content %}
+
+<section class="menu">
+  <a class="inactive" href="{{ path ('formations')}}"> Formations </a>
+  <a class="inactive" href="{{ path ('stages')}}"> Stages et séminaires</a>
+  <a class="inactive" href="{{ path ('rdv')}}"> Séances Individuelles </a>
+  <a class="on" href="{{ path ('ebook')}}"> E-book </a>
+  <a class="inactive" href="{{ path ('motivation')}}"> Motivation </a>
+</section>
+
+<div class="container-fluid my-5">
+    <div class="row">
+
+      {% for product in products %}
+      <div class="card col-lg-4 col-md-6 card-center-perso" style="max-width: 25rem; min-height:40rem;">
+        <a class="my-4" href="{{ path('front_product', {id: product.id})}}"><img src="{{ asset('uploads/')}}{{ product.image }}" class="card-img-top" alt="{{ product.title}}" title="{{ product.title}}"></a>
+        <div class="card-body">
+          <h5 class="card-title my-4">{{ product.title}}</h5>
+          <h5 class="card-title my-4">{{ product.price}} €</h5>
+          <p class="card-text my-4">{{ product.shortdescription}}</p>
+          <p class="guarantee my-3"> Garantie 100% Satisfait ou remboursé !* </p>
+          <a href="{{ path('cart_add', {id: product.id })}}" class="btn btn-perso">Ajouter au panier</a>
+          <a href="{{ path('front_product', {id: product.id})}}" class="btn btn-perso-dark">Details</a>
+        </div>
+      </div>
+      {% endfor %}
+
+
+    </div>
+</div>
+<a class="btn btn-perso my-5" href="{{ path('review_show')}}"> Voir nos avis clients </a>
+{% endblock %}

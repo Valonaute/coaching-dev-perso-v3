@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Votre Compte{% endblock title %} 
+
+{% block content %}
+
+<h2 class="my-5"> Bienvenue sur votre espace membre {{ app.user.firstname }} !</h2>
+
+<h3 class="my-4"> Vous êtes inscrit depuis le {{ app.user.registrationdate|date('d/m/Y')}}</h3>
+<h3 class="text-perso"> Voici les informations à propos de votre compte : </h3>
+
+<table class="table mx-auto" style="width:40vw">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Information</th>
+        </tr>
+    </thead>
+    <tbody >
+            <tr>
+                <td>Prénom </td>
+                <td>{{ app.user.firstname }} </td>
+            </tr>
+            <tr>
+                <td>Nom </td>
+                <td>{{ app.user.lastname }} </td>
+            </tr>
+            <tr>
+                <td>Email </td>
+                <td>{{ app.user.email }} </td>
+            </tr>
+            <tr>
+                <td>Role  </td>
+                <td>{% if is_granted('ROLE_ADMIN') %} Administrateur {% else %} Utilisateur {% endif %}</td>
+            </tr>
+            <tr>
+                <td>Adresse </td>
+                <td>{% if app.user.address is empty %} N/A {% else %} {{ app.user.address }} {% endif %}</td>
+            </tr>
+            <tr>
+                <td>Code postal  </td>
+                <td>{% if app.user.zipcode is empty %} N/A {% else %} {{ app.user.zipcode }} {% endif %}</td>
+            </tr>
+            <tr>
+                <td>Ville </td>
+                <td>{% if app.user.city is empty %} N/A {% else %} {{ app.user.city }} {% endif %} </td>
+            </tr>
+    </tbody>
+</table>  
+
+<a class="btn btn-perso my-5" href="{{ path ('update_account')}}">Modifier le compte</a>
+
+<h3 class="text-perso"> Voici votre historique de commande : </h3>
+
+<div class="container-fluid my-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID commande</th>
+                <th scope="col">Date</th>
+                <th scope="col">Montant Total </th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set numorder = 0 %}
+            {% for order in orders %}
+            {% if order.statut == 'PAID' %}
+            {% set numorder = numorder + 1 %}
+                <tr>
+                    <th scope="row"> {{ numorder }} </th>
+                    <td> {{ order.id }} </td>
+                    <td> {{ order.dateorder | date('d/m/Y') }} </td>
+                    <td> {{ order.totalamount|number_format(2, ',', ' ') }} € </td>
+                    <td>  <a class="btn btn-perso mx-1" href=" {{ path ('review_create', {id: order.id})}}"> Laisser un Avis</a><a class="btn btn-outline-perso mx-1" href="{{ path ('review_show_one', {id: order.id})}}">Voir l'avis</a></td>
+                </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+<a class="btn btn-outline-perso my-5" id="confirm-box-button" onclick=" return confirm('Confirmez vous la suppression de votre compte ?')" href="{{ path ('delete_account')}}">Supprimer votre compte</a>
+{% endblock content %}
+
+
