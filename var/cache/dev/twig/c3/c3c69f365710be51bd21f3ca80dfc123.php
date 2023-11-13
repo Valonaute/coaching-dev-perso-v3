@@ -316,10 +316,10 @@ class __TwigTemplate_e917e0f0ed044a3da7ad1ae32c6496e1 extends Template
         // line 122
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("valonauteinc");
         echo "\" target =\"_blank\">EasyWebFactory Inc.</a>
-                        <button><a href=\"";
+                        <button href=\"";
         // line 123
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("careers");
-        echo "\">On Recrute </a></button>
+        echo "\" >On Recrute </button>
                     </nav>
                 </section>
                 <section class=\"nav-column footer-desktop\">
@@ -668,7 +668,7 @@ class __TwigTemplate_e917e0f0ed044a3da7ad1ae32c6496e1 extends Template
                         <a href=\"{{ path ('mapsite') }}\">Plan du site</a>
                         <a href=\"{{ path ('contact') }}\">Contact</a>
                         <a href=\"{{ path ('valonauteinc') }}\" target =\"_blank\">EasyWebFactory Inc.</a>
-                        <button><a href=\"{{ path ('careers') }}\">On Recrute </a></button>
+                        <button href=\"{{ path ('careers') }}\" >On Recrute </button>
                     </nav>
                 </section>
                 <section class=\"nav-column footer-desktop\">
@@ -722,6 +722,6 @@ class __TwigTemplate_e917e0f0ed044a3da7ad1ae32c6496e1 extends Template
     </body>
 </html>
 
-", "base.html.twig", "C:\\wamp64\\www\\symfony\\3.0 projet-coaching-prod-main\\templates\\base.html.twig");
+", "base.html.twig", "C:\\wamp64\\www\\symfony\\3.1 projet-coaching-prod-main\\templates\\base.html.twig");
     }
 }

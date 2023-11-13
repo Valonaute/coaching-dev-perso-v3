@@ -50,6 +50,9 @@ body {
     color: var(--link);
     margin-top: 5em;
 }
+button {
+
+}
 footer section h2, footer section h3 {
     font-family: 'Horizon';
     font-size: 0.5em;
@@ -166,16 +169,18 @@ ul {
 .btn-perso {
     background-color: var(--buttons);
     color: var(--background);
+    padding: 0.75em;
 }
 .btn-perso:hover {
     background-color: var(--background);
     color: var(--buttons);
-    border: var(--buttons) solid 1px;
+    border: var(--buttons) solid 2px;
 }
 .btn-outline-perso {
     background-color: rgba(255, 255, 255, 0);
     color: var(--buttons);
     border-color: var(--buttons);
+    padding: 0.75em;
 }
 .btn-outline-perso:hover {
     color: white;
@@ -184,6 +189,7 @@ ul {
 .btn-perso-dark {
     background-color: var(--background);
     color: var(--buttons);
+    padding: 0.75em;
 }
 .btn-perso-dark:hover {
     color: var(--background);
@@ -274,13 +280,16 @@ ul {
     padding: 1vh;
     margin: 1vh;
     color: var(--background);
+    font-weight: 600;
 }
 .nav-column h3 {
     margin-bottom: 3vh;
     font-size: 1.5em;
 }
 .nav-column button:hover {
-    background-color: var(--buttons);
+    background-color: var(--background) !important;
+    border: var(--buttons) solid 2px;
+    color: var(--buttons) !important;
 }
 .nav-column button a {
     color: var(--background);
