@@ -10,7 +10,6 @@
     <table class="table">
         <thead>
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">Utilisateur</th>
                     <th scope="col">Titre avis</th>
                     <th scope="col">Contenu Avis</th>
@@ -22,7 +21,6 @@
         <tbody>
             {% for review in reviews %}
                 <tr>
-                    <th scope="row">{{review.id }}</th>
                     <td>{{ review.pseudo }}</td>
                     <td>{{ review.title }}</td>
                     <td>{{ review.comment }}</td>

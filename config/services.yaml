@@ -7,6 +7,12 @@ parameters:
     image_directory: '%kernel.project_dir%/public/uploads'
 services:
     # default configuration for services in *this* file
+    monolog:
+        class: Monolog\Logger
+        arguments:
+            - ['%kernel.debug%', '%kernel.environment%']
+        tags:
+            - { name: monolog.logger }
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.

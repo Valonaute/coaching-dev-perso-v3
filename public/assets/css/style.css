@@ -50,9 +50,6 @@ body {
     color: var(--link);
     margin-top: 5em;
 }
-button {
-
-}
 footer section h2, footer section h3 {
     font-family: 'Horizon';
     font-size: 0.5em;

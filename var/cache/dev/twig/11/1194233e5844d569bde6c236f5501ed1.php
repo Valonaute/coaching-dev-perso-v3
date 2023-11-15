@@ -73,6 +73,6 @@ class __TwigTemplate_f5916fcabd7a85abc3cc9cfcd2f51ff2 extends Template
     <path d=\"M4 6v6a8 3 0 0 0 16 0v-6\"></path>
     <path d=\"M4 12v6a8 3 0 0 0 16 0v-6\"></path>
 </svg>
-", "@Doctrine/Collector/database.svg", "C:\\wamp64\\www\\symfony\\3.0 projet-coaching-prod-main\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\database.svg");
+", "@Doctrine/Collector/database.svg", "C:\\wamp64\\www\\symfony\\3.1 projet-coaching-prod-main\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\database.svg");
     }
 }

@@ -5,8 +5,8 @@
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev</parameter>
+    <parameter key="kernel.build_dir">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
@@ -103,7 +103,7 @@
     <parameter key="kernel.http_method_override">false</parameter>
     <parameter key="kernel.trust_x_sendfile_type_header">false</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
-    <parameter key="kernel.default_locale">en</parameter>
+    <parameter key="kernel.default_locale">fr</parameter>
     <parameter key="kernel.enabled_locales" type="collection"/>
     <parameter key="kernel.error_controller">error_controller</parameter>
     <parameter key="debug.file_link_format">%env(default::SYMFONY_IDE)%</parameter>
@@ -112,12 +112,12 @@
     <parameter key="translator.logging">false</parameter>
     <parameter key="translator.default_path">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
-    <parameter key="router.cache_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev</parameter>
+    <parameter key="router.cache_dir">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="cache.prefix.seed">_C:\wamp64\www\symfony\3.1 projet-coaching-prod-main.App_KernelDevDebugContainer</parameter>
@@ -132,11 +132,11 @@
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/profiler</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
       <parameter>@KarserRecaptcha3/Form/karser_recaptcha3_widget.html.twig</parameter>
@@ -207,7 +207,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -563,7 +563,7 @@
       <tag name="container.hot_path"/>
       <tag name="container.hot_path"/>
       <argument type="service" id="request_stack"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument type="service" id="router.default" on-invalid="ignore"/>
       <argument>false</argument>
       <argument type="collection"/>
@@ -621,7 +621,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/http_cache</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -631,7 +631,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -774,7 +774,7 @@
     </service>
     <service id="slugger" class="Symfony\Component\String\Slugger\AsciiSlugger">
       <tag name="kernel.locale_aware"/>
-      <argument>en</argument>
+      <argument>fr</argument>
     </service>
     <service id="container.getenv" class="Closure">
       <tag name="routing.expression_language_function" function="env"/>
@@ -1143,7 +1143,7 @@
       <argument type="service" id="translation.writer"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main/translations</argument>
       <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main/templates</argument>
       <argument type="collection">
@@ -1180,7 +1180,7 @@
       <argument type="service" id="translation.provider_collection"/>
       <argument type="service" id="translation.writer"/>
       <argument type="service" id="translation.reader"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument type="collection"/>
       <argument type="collection"/>
       <call method="setName">
@@ -1401,7 +1401,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1420,7 +1420,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/app</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -1672,7 +1672,7 @@
       <tag name="kernel.locale_aware"/>
       <argument type="service" id=".service_locator.yY.p4P7"/>
       <argument type="service" id="translator.formatter.default"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument type="collection">
         <argument key="translation.loader.php" type="collection">
           <argument>php</argument>
@@ -1711,7 +1711,7 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/translations</argument>
+        <argument key="cache_dir">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
@@ -2067,6 +2067,7 @@
       </call>
       <call method="setFallbackLocales">
         <argument type="collection">
+          <argument>fr</argument>
           <argument>en</argument>
         </argument>
       </call>
@@ -2356,7 +2357,7 @@
     <service id="translation.locale_switcher" class="Symfony\Component\Translation\LocaleSwitcher">
       <tag name="kernel.reset" method="reset"/>
       <tag name="kernel.locale_aware"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument type="tagged_iterator" tag="kernel.locale_aware" exclude="translation.locale_switcher"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
     </service>
@@ -2986,7 +2987,7 @@
       <argument type="service" id=".service_locator.PvoQzFT.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev</argument>
+        <argument key="cache_dir">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2998,7 +2999,7 @@
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="parameter_bag" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <call method="setConfigCacheFactory">
         <argument type="service" id="config_cache_factory"/>
       </call>
@@ -3077,13 +3078,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/annotations.php</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
       <tag name="container.hot_path"/>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/annotations.php</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor">
@@ -3175,7 +3176,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/sessions</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -3380,10 +3381,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/validation.php</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/validation.php</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory">
@@ -3734,7 +3735,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/profiler</argument>
+      <argument>file:C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -3781,7 +3782,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -3906,7 +3907,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/twig</argument>
+        <argument key="cache">C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -4641,7 +4642,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -7847,7 +7848,7 @@
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument>PbULoeDHc3</argument>
       <argument>0</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/app</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -7857,7 +7858,7 @@
       <argument>DDNMj+8oV5</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7865,7 +7866,7 @@
       <argument>qA2wXiGag1</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7873,7 +7874,7 @@
       <argument>kDI9Zujv0+</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7881,7 +7882,7 @@
       <argument>W1FnNPU39y</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7889,7 +7890,7 @@
       <argument>meAM5BDw7q</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7897,14 +7898,14 @@
       <argument>kFPjgsQKNz</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.scheduler.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument>mQza4-D-+M</argument>
       <argument>0</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/app</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -7914,7 +7915,7 @@
       <argument>gsWgwIaaEr</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7924,7 +7925,7 @@
       <argument>ozm7Ca0phd</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -7932,7 +7933,7 @@
       <argument>I055VVfQDQ</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp64\www\symfony\3.1 projet-coaching-prod-main\var\cache\dev/pools/system</argument>
+      <argument>C:/wamp64/www/symfony/3.1 projet-coaching-prod-main/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
