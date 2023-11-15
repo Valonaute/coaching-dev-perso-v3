@@ -2,4 +2,5 @@
 /.env.local
 /.env.local.php
 /.env.*.local
+/var/cache
 ###< symfony/framework-bundle ###

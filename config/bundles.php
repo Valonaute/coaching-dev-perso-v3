@@ -13,4 +13,5 @@ return [
     Karser\Recaptcha3Bundle\KarserRecaptcha3Bundle::class => ['all' => true],
     ConnectHolland\CookieConsentBundle\CHCookieConsentBundle::class => ['all' => true],
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
+    Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
 ];
